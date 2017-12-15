@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "Echarts";
+}
+<style>
+    #bar {
+        width: 60%;
+        height: 400px;
+       float:left;
+    }
+    #pie {
+        width: 30%;
+        height: 400px;
+        float: right;
+    }
+
+</style>
+<h2>Echarts绘制图表</h2>
+<div id="bar"></div>
+<div id="pie"></div>
+@foreach (var i in ViewBag.TestData)
+{
+    <div>i:@i</div>
+    <div>num:@i.num</div>
+    <div>ss:@i.ss</div>
+}
+<div></div>
+<div class="clearfix"></div>
+@Scripts.Render("~/bundles/echartsSimple")
+<script>
+    //绘制柱状图
+    var barChart = echarts.init(document.getElementById('bar'));
+    var pieChart = echarts.init(document.getElementById('pie'));
+    var bOption = {
+        title: {
+            text:'2017年11月14日物联网数据采集表'
+        },
+        tooltip: {},
+        legend: {
+            data:['数据量']
+        },
+        xAxis: {
+            data:['出入口门禁','人脸识别','RFID','车牌识别',]
+        },
+        yAxis:{},
+        series: [{
+            name: '数据量',
+            type: 'bar',
+            data:[22222,33333,44444,55555]
+        },]
+    };
+   var  pOption = {
+        title: {
+            text: '出入口门禁各设备采集表',
+            subtext: '纯属虚构',
+            x: 'center'
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            left: 'left',
+            data: ['设备1', '设备2', '设备3', '设备4', '设备5']
+        },
+        series: [
+            {
+                name: '采集量',
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [
+                    { value: 8888, name: '设备1' },
+                    { value: 2222, name: '设备2' },
+                    { value: 2222, name: '设备3' },
+                    { value: 4444, name: '设备4' },
+                    { value: 4444, name: '设备5' }
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }
+        ]
+    };
+    var Tempdata = (function () {
+        var d = [];
+        var len = 0;
+        var now = new Date();
+        var value;
+        while (len++ < 20) {
+            d.push([
+                new Date(2014, 9, 1, 0, len * 10000),
+                (Math.random() * 30).toFixed(2) - 0,
+                (Math.random() * 100).toFixed(2) - 0
+            ]);
+        }
+        return d;
+    })();
+    pieChart.setOption(pOption);
+    barChart.setOption(bOption);
+</script>
+

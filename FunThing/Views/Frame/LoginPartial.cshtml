@@ -1,0 +1,19 @@
+﻿@if(Request.IsAuthenticated)
+{ 
+<div class="navbar-collapse collapse pull-right">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink($"{ViewBag.User.Nickname.ToString()}","UserInfo", "Account")</li>
+        <li>@Html.ActionLink("退出", "SignOut", "Account")</li>
+    </ul>
+</div>
+}
+else
+{
+    <div class="navbar-collapse collapse pull-right">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("登陆", "Login", "Account")</li>
+            <li>@Html.ActionLink($"注册", "SignUp", "Account")</li>
+        </ul>
+    </div>
+}
+

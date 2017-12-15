@@ -1,0 +1,51 @@
+2017-11-27 09:22:18.5299 FunThing.Class.UserTrackerLogAttribute.OnActionExecuted Info: UserName=|Controller=Account|Action=Login|TimeStamp=2017/11/27 9:22:17|Username=1608617462@qq.com  <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => UserTrackerLogAttribute.OnActionExecuted
+2017-11-27 09:22:58.4162 FunThing.Class.UserTrackerLogAttribute.OnActionExecuted Info: UserName=1608617462@QQ.com|Controller=Account|Action=Login|TimeStamp=2017/11/27 9:22:58|Username=1608617462@qq.com  <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => UserTrackerLogAttribute.OnActionExecuted
+2017-11-27 09:25:09.8214 FunThing.Class.UserTrackerLogAttribute.OnActionExecuted Info: UserName=|Controller=Account|Action=Login|TimeStamp=2017/11/27 9:25:09|Username=1608617462@qq.com  <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => UserTrackerLogAttribute.OnActionExecuted
+2017-11-27 09:25:13.6827 FunThing.Class.CustomExceptionAttribute.OnException Error: 发生异常：System.ArgumentException: 值不能为 null 或为空。
+参数名: url
+   在 System.Web.Mvc.Controller.Redirect(String url)
+   在 FunThing.Controllers.AccountController.<Login>d__11.MoveNext() 位置 D:\WorkSpace\VS2017\NetMvc\FunThingOld\FunThing\Controllers\AccountController.cs:行号 152
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)  <>c__DisplayClass21.<BeginInvokeAction>b__1e => ControllerActionInvoker.InvokeExceptionFilters => CustomExceptionAttribute.OnException
+2017-11-27 10:02:10.9448 FunThing.Class.UserTrackerLogAttribute.OnActionExecuted Info: UserName=|Controller=Account|Action=Login|TimeStamp=2017/11/27 10:02:10|Username=1608617462@qq.com  <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => UserTrackerLogAttribute.OnActionExecuted
+2017-11-27 10:12:58.3393 FunThing.Class.UserTrackerLogAttribute.OnActionExecuted Info: UserName=|Controller=Account|Action=Login|TimeStamp=2017/11/27 10:12:57|Username=1608617462@qq.com  <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => UserTrackerLogAttribute.OnActionExecuted
+2017-11-27 10:12:58.5465 FunThing.Class.CustomExceptionAttribute.OnException Error: Log Event: Logger='log' Level=Error Message='发生异常：System.ArgumentException: 值不能为 null 或为空。
+参数名: url
+   在 System.Web.Mvc.Controller.Redirect(String url)
+   在 FunThing.Controllers.AccountController.<Login>d__11.MoveNext() 位置 D:\WorkSpace\VS2017\NetMvc\FunThingOld\FunThing\Controllers\AccountController.cs:行号 152
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)' SequenceID=4  <>c__DisplayClass21.<BeginInvokeAction>b__1e => ControllerActionInvoker.InvokeExceptionFilters => CustomExceptionAttribute.OnException
+2017-11-27 14:35:20.2463 FunThing.Class.LogHelper.LogEi Info: 用户访问了Account/Login  <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => UserTrackerLogAttribute.OnActionExecuted => LogHelper.LogEi
+2017-11-27 14:36:36.0138 FunThing.Class.LogHelper.LogEi Info: 用户访问了Account/Login  <>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f => UserTrackerLogAttribute.OnActionExecuted => LogHelper.LogEi
