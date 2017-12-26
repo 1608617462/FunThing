@@ -11,9 +11,6 @@ using System.Web.Mvc;
 
 namespace FunThing.Class
 {
-    /// <summary>
-    /// 自定义错误处理机制
-    /// </summary>
     public class CustomExceptionAttribute: HandleErrorAttribute
     {
        

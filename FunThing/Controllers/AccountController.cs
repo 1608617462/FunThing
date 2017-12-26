@@ -13,9 +13,6 @@ using NLog.Fluent;
 
 namespace FunThing.Controllers
 {
-    /// <summary>
-    /// 用户账户相关
-    /// </summary>
     public class AccountController :BaseController
     {
         public AppSignInManager SignInManager
@@ -37,11 +34,6 @@ namespace FunThing.Controllers
             return View();
         }
 
-        /// <summary>
-        /// 用户注册
-        /// </summary>
-        /// <param name="model">用户注册Model</param>
-        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult> SignUp(UserSignupModel model)
         {
@@ -57,10 +49,7 @@ namespace FunThing.Controllers
             }
              return View(model);
         }
-        /// <summary>
-        /// 将返回结果中的错误添加到错误集合中
-        /// </summary>
-        /// <param name="result">返回的结果</param>
+
         private void AddErrorsFromResult(IdentityResult result)
         {
             foreach (string error in result.Errors)
@@ -68,11 +57,7 @@ namespace FunThing.Controllers
                 ModelState.AddModelError("", error);
             }
         }
-        /// <summary>
-        /// 删除用户
-        /// </summary>
-        /// <param name="id">用户的主键</param>
-        /// <returns></returns>
+
         [HttpPost]
         public async Task<ActionResult> DeleteUser(string id)
         {
@@ -88,11 +73,7 @@ namespace FunThing.Controllers
             }
             return View("Error", new string[] { "此用户不存在" });
         }
-        /// <summary>
-        /// 编辑用户
-        /// </summary>
-        /// <param name="eUser">用户编辑Model</param>
-        /// <returns></returns>
+
         [HttpPost]
         public async Task<ActionResult> EditUser(UserEditModel eUser)
         {
@@ -145,12 +126,7 @@ namespace FunThing.Controllers
             ViewBag.returnUrl = returnUrl??"/Home/Index";
             return View();
         }
-        /// <summary>
-        /// 用户登陆
-        /// </summary>
-        /// <param name="model">用户登陆Model</param>
-        /// <param name="returnUrl">登陆成功后跳转的页面</param>
-        /// <returns></returns>
+
         [HttpPost]
         [AllowAnonymous]
         [UserTrackerLog]
