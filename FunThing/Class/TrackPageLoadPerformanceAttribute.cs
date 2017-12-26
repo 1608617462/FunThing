@@ -22,11 +22,6 @@ namespace FunThing.Class
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            //过滤掉ChildAction,因为ChildAction实际上不是一个单独的页面
-            if (filterContext.IsChildAction)
-            {
-                return;
-            }
             var currentThreadId = System.Threading.Thread.CurrentThread.ManagedThreadId;
             try
             {
